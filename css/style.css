@@ -91,6 +91,58 @@ h2 {
 	position: relative;
 	z-index: 1;
 	top: -50px;
+	width: 346px;
+	margin: 0 auto;
+}
+
+.colorname {
+	position: absolute;
+	font-size: 15px;
+	color: white;
+	font-weight: 400;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	bottom: 116px;
+	height: 15px;
+}
+
+.hex {
+	position: absolute;
+	font-size: 11px;
+	color: white;
+	opacity: 0.75;
+	font-weight: 300;
+	letter-spacing: 1px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	bottom: 96px;
+	height: 11px;
+}
+
+.picker {
+	background-image: url(../images/picker.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	left: calc(50% - 15px);
+	top: 50px;
+    transform: translate3d(0px, 0px, 0px);
+    animation: picker-animation 4s 0s ease infinite forwards;
+}
+
+.preview {
+	position: absolute;
+	height: 48px;
+	width: 48px;
+	border-radius: 50%;
+	background: #6fb400;
+	left: calc(50% - 24px);
+	bottom: 154px;
+    animation: preview-animation 4s 0s ease infinite forwards;
 }
 
 .features {
@@ -156,4 +208,190 @@ h2 {
 	font-weight: 300;
 	padding-bottom: 40px;
 	text-align: center;
+}
+
+
+/**
+ * ANIMATION TIME!!!
+ */
+
+@keyframes picker-animation {
+	0%, 25% {
+		transform: translate3d(0, 0, 0);
+	}
+	30%, 55% {
+		transform: translate3d(40px, 60px, 0);
+	}
+	60%, 85% {
+		transform: translate3d(-130px, -5px, 0);
+	}
+	90%, 100% {
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes preview-animation {
+	0%, 25% {
+		background-color: #6fb400;
+	}
+	30%, 55% {
+		background-color: #3D5340;
+	}
+	60%, 85% {
+		background-color: #72708A;
+	}
+	90%, 100% {
+		background-color: #6fb400;
+	}
+}
+
+.hex__1, .hex__2, .hex__3 {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.hex__1 {
+	opacity: 1;
+	visibility: visible;
+    animation: hex__1 4s 0s ease infinite forwards;
+}
+.hex__2 {
+	opacity: 0;
+	visibility: hidden;
+    animation: hex__2 4s 0s ease infinite forwards;
+}
+.hex__3 {
+	opacity: 0;
+	visibility: hidden;
+    animation: hex__3 4s 0s ease infinite forwards;
+}
+
+@keyframes hex__1 {
+	0%, 25% {
+		opacity: 1;
+		visibility: visible;
+	}
+	30%, 85% {
+		opacity: 0;
+		visibility: hidden;
+	}
+	90%, 100% {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+@keyframes hex__2 {
+	0%, 25% {
+		opacity: 0;
+		visibility: hidden;
+	}
+	30%, 55% {
+		opacity: 1;
+		visibility: visible;
+	}
+	60%, 85% {
+		opacity: 0;
+		visibility: hidden;
+	}
+	90%, 100% {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+@keyframes hex__3 {
+	0%, 25% {
+		opacity: 0;
+		visibility: hidden;
+	}
+	30%, 55% {
+		opacity: 0;
+		visibility: hidden;
+	}
+	60%, 85% {
+		opacity: 1;
+		visibility: visible;
+	}
+	90%, 100% {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+
+.colorname__1, .colorname__2, .colorname__3 {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.colorname__1 {
+	opacity: 1;
+	visibility: visible;
+    animation: colorname__1 4s 0s ease infinite forwards;
+}
+.colorname__2 {
+	opacity: 0;
+	visibility: hidden;
+    animation: colorname__2 4s 0s ease infinite forwards;
+}
+.colorname__3 {
+	opacity: 0;
+	visibility: hidden;
+    animation: colorname__3 4s 0s ease infinite forwards;
+}
+
+@keyframes colorname__1 {
+	0%, 25% {
+		opacity: 1;
+		visibility: visible;
+	}
+	30%, 85% {
+		opacity: 0;
+		visibility: hidden;
+	}
+	90%, 100% {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+@keyframes colorname__2 {
+	0%, 25% {
+		opacity: 0;
+		visibility: hidden;
+	}
+	30%, 55% {
+		opacity: 1;
+		visibility: visible;
+	}
+	60%, 85% {
+		opacity: 0;
+		visibility: hidden;
+	}
+	90%, 100% {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+@keyframes colorname__3 {
+	0%, 25% {
+		opacity: 0;
+		visibility: hidden;
+	}
+	30%, 55% {
+		opacity: 0;
+		visibility: hidden;
+	}
+	60%, 85% {
+		opacity: 1;
+		visibility: visible;
+	}
+	90%, 100% {
+		opacity: 0;
+		visibility: hidden;
+	}
 }
