@@ -151,7 +151,7 @@ h2 {
 
 .features {
 	display: flex;
-	margin-top: 100px;
+	margin-top: 40px;
 	justify-content: center;
     align-items: flex-start;
     position: relative;
@@ -397,5 +397,31 @@ h2 {
 	90%, 100% {
 		opacity: 0;
 		visibility: hidden;
+	}
+}
+
+
+
+
+
+/**
+ * RESPONSIVE
+ */
+@media all and (max-width: 600px) {
+	.features {
+		display: block;
+	}
+
+	.features__item {
+		margin-bottom: 50px;
+	}
+
+	.separator {
+		margin: 50px auto;
+	}
+
+	.about {
+		padding: 0 50px;
+		line-height: 1.5;
 	}
 }
