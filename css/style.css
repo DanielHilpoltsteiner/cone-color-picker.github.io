@@ -14,7 +14,7 @@ body {
 	text-align: center;
 	background: url(../images/bg.jpg) no-repeat;
 	background-size: 1875px;
-	background-position: center -120px;
+	background-position: center -344px;
 	position: relative;
 }
 
@@ -75,7 +75,7 @@ h2 {
 .iphone-container {
 	position: relative;
 	z-index: 1;
-
+	top: -50px;
 }
 
 .features {
