@@ -9,6 +9,16 @@ body {
 	box-sizing: border-box;
 }
 
+a {
+	color: white;
+	text-decoration: none
+}
+
+a:focus, a:active {
+	outline: none;
+	border: none;
+}
+
 .top-section {
 	padding-top: 60px;
 	text-align: center;
@@ -70,6 +80,11 @@ h2 {
 	border-radius: 10px;
 	position: relative;
 	z-index: 1;
+	transition: all 0.25s ease;
+}
+
+.download-button:hover {
+	background-color: rgba(0, 0, 0, 1);
 }
 
 .iphone-container {
