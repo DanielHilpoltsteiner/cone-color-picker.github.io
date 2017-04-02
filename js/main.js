@@ -33,6 +33,9 @@ function getColorProps(hex) {
 }
 
 var hex = getParameterByName('color');
+if (hex.indexOf('#') === -1) {
+	hex = '#' + hex;
+}
 var color = getColorProps(hex)
 var palette = []
 
