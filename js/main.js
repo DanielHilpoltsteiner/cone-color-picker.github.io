@@ -33,21 +33,28 @@ function getColorProps(hex) {
 }
 
 var hex = getParameterByName('color');
-if (hex.indexOf('#') === -1) {
+var color = '';
+if (hex && hex.indexOf('#') === -1) {
 	hex = '#' + hex;
 }
-var color = getColorProps(hex)
+
+if (hex) {
+	color = getColorProps(hex)
+}
 var palette = []
 
 hideModal()
-if (color[3].length) {
+if (color && color[3].length) {
 	showModal(color)
 }
 
 var paletteChildren = document.querySelectorAll('.color-palette__child');
 var paletteChild = document.querySelector('.color-palette__child')
 var marker = document.querySelector('.palette-marker')
-moveMarker(2, ntc.hsl(hex));
+
+if (color) {
+	moveMarker(2, ntc.hsl(hex));
+}
 
 for (var i = 0; i < paletteChildren.length; i++) {
 	paletteChildren[i].addEventListener('click', function(e) {
