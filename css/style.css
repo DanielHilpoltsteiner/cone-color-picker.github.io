@@ -692,9 +692,11 @@ h2 {
 /**
  * MODAL
  */
-body.modal-active {
-  overflow: hidden; }
-  body.modal-active .modal {
+.modal-active {
+  overflow: hidden;
+  position: relative;
+  height: 100vh; }
+  .modal-active .modal {
     visibility: visible;
     opacity: 1; }
 

@@ -19,11 +19,11 @@ function shadeColor(color, percent) {
 
 function showModal(color) {
 	updateColorInModal(color, false);
-	document.body.classList.add("modal-active");
+	document.querySelector('.wrapper').classList.add("modal-active");
 }
 
 function hideModal() {
-	document.body.classList.remove("modal-active");
+	document.querySelector('.wrapper').classList.remove("modal-active");
 }
 
 function getColorProps(hex) {

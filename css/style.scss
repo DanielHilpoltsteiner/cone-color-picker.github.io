@@ -407,8 +407,10 @@ h2 {
  * MODAL
  */
 
-body.modal-active {
+.modal-active {
 	overflow: hidden;
+	position: relative;
+	height: 100vh;
 
 	.modal {
 		visibility: visible;
