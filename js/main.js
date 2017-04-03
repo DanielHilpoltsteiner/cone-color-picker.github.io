@@ -116,7 +116,7 @@ function moveMarker(index, hsl) {
 var backTop = document.querySelector('.modal__content').getBoundingClientRect().top;
 var closeBtn = document.querySelector('.modal__close');
 
-closeBtn.style.top = backTop/2 - 6 + 'px'
+closeBtn.style.top = backTop/2 - 24 + 'px'
 closeBtn.addEventListener('click', function (e) {
 	hideModal()
 }, false)

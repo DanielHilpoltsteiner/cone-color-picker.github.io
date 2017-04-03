@@ -692,14 +692,6 @@ h2 {
 /**
  * MODAL
  */
-.modal-active {
-  overflow: hidden;
-  position: relative;
-  height: 100vh; }
-  .modal-active .modal {
-    visibility: visible;
-    opacity: 1; }
-
 .modal {
   position: absolute;
   left: 0;
@@ -714,6 +706,14 @@ h2 {
   -moz-transition: all 0.25s ease;
   transition: all 0.25s ease; }
 
+.modal-active {
+  overflow: hidden;
+  position: relative;
+  height: 100vh; }
+  .modal-active .modal {
+    visibility: visible;
+    opacity: 1; }
+
 .modal__overlay {
   background: rgba(0, 0, 0, 0.9);
   position: absolute;
@@ -724,15 +724,16 @@ h2 {
 
 .modal__close {
   position: absolute;
-  width: 24px;
-  height: 12px;
+  width: 48px;
+  height: 48px;
   background: url(../images/back.png) no-repeat;
-  -moz-background-size: contain;
-    -o-background-size: contain;
-       background-size: contain;
-  left: -webkit-calc(50% - 12px);
-  left: -moz-calc(50% - 12px);
-  left: calc(50% - 12px);
+  -moz-background-size: 24px 12px;
+    -o-background-size: 24px 12px;
+       background-size: 24px 12px;
+  background-position: center;
+  left: -webkit-calc(50% - 24px);
+  left: -moz-calc(50% - 24px);
+  left: calc(50% - 24px);
   top: 100px;
   cursor: pointer; }
 

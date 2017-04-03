@@ -406,18 +406,6 @@ h2 {
 /**
  * MODAL
  */
-
-.modal-active {
-	overflow: hidden;
-	position: relative;
-	height: 100vh;
-
-	.modal {
-		visibility: visible;
-		opacity: 1;
-	}
-}
-
 .modal {
 	position: absolute;
 	left: 0;
@@ -428,6 +416,17 @@ h2 {
 	visibility: hidden;
 	opacity: 0;
 	transition: all 0.25s ease;
+}
+
+.modal-active {
+	overflow: hidden;
+	position: relative;
+	height: 100vh;
+
+	.modal {
+		visibility: visible;
+		opacity: 1;
+	}
 }
 
 .modal__overlay {
@@ -441,11 +440,12 @@ h2 {
 
 .modal__close {
 	position: absolute;
-	width: 24px;
-	height: 12px;
+	width: 48px;
+	height: 48px;
 	background: url(../images/back.png) no-repeat;
-	background-size: contain;
-	left: calc(50% - 12px);
+	background-size: 24px 12px;
+	background-position: center;
+	left: calc(50% - 24px);
 	top: 100px;
 	cursor: pointer;
 }
